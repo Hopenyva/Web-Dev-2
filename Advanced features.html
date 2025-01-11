@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced html</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h1>Audio element</h1>
+        <div class=" audio section">
+            <!--Audio element-->
+            <audio controls preload="auto">
+                <source src="" type="audio/ogg">
+                <source src="song.mp3" type="audio/mpg">
+                Your browser does not support the audio element.
+            </audio> 
+        </div>
+
+        <h2>Video element</h2>
+        <div class="video section">
+            <!--Video element-->
+            <video controls width="640" height="360">
+            <video controls preload="metadata" poster="poster-image.jpg">
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+                Your browser does not support the video element
+            </video>
+        </div>
+
+        <h3>Registration form</h3>
+        <form action="#" method="post">
+        <div class="Registration form">
+            <!--Form element-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email address">Email address:</label>
+            <input type="email" name="useremail" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" minlength="8" maxlength="20">
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="18">
+            <div class="gender-group">
+                <label>Gender</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        </div>
+    </body>
+</html>
