@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLING TUTORIAL</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+    <style>
+        /* Part 1: CSS Basics */
+        /* Element Selector: Changes the font size of all headings */
+        h1 {
+            font-size: 24px;
+            color: navy;
+        }
+
+        /* Class Selector: Applies a background color to specific sections */
+        .highlight {
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* ID Selector: Adds a border to a unique element */
+        #unique-section {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Part 2: Internal CSS Styling */
+        p {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        /* Part 3: Basic Styling Properties */
+        body {
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background-color: #ffe6e6;
+            border: 2px solid #ff4d4d;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff3333;
+        }
+
+        .card p {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: cherry red;">Welcome to My Page</h1> <!-- Inline CSS -->
+    <p>You are valued</p>
+    
+    <div class="highlight">
+        <p>This is a post of appreciation to you</p>
+    </div>
+    
+    <div id="unique-section">
+        <p>You are amazing.</p>
+    </div>
+
+    <div class="card">
+        <h2>Happy Birthday!</h2>
+        <p>Wishing you many happy returns!</p>
+    </div>
+</body>
+</html>
