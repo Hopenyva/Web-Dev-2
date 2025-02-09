@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: navy;
+            color: beige;
+        }
+
+        .logo {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .text-content {
+            padding: 20px;
+            background-color: beige;
+        }
+
+        .image-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header, footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 601px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        header, nav a, .social-links a {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyLogo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="text-content">
+            <h2>Welcome to My Website</h2>
+            <p>This is a responsive webpage using Flexbox and Grid.</p>
+        </div>
+        <div class="image-content">
+            <img src="https://www.pexels.com/photo/software-on-laptop-17115906/" alt="Placeholder Image">
+        </div>
+    </div>
+
+    <footer>
+        <div>Copyright &copy; 2025</div>
+        <div class="social-links">
+            
+            
+            <a href="https://www.linkedin.com/in/hope-nabwire-783969289?trk=contact-info">linkedln</a>
+        </div>
+    </footer>
+</body>
+</html>
